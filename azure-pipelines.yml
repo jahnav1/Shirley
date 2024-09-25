@@ -15,7 +15,7 @@ steps:
        versionType: 'CurrentVersion'
        projectJsonPath: :'$(Build.SourcesDirectory)/project.son'
        orchestratorConnection: 'ConnectionToOrch'
-       outputPath: '(Build.ArtifactStagingDirectory)/output'
+       outputPath: '$(Build.ArtifactStagingDirectory)/output'
        tracelevel: 'verbose'
 
 - task: UiPathDeploy@4
