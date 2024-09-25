@@ -20,7 +20,7 @@ steps:
 
 - task: UiPathDeploy@4
   inputs:
-         orchestratorConnection: 'ConnectionToorch'
+         orchestratorConnection: 'ConnectionToOrch'
          PackagesPath: '$(Build.ArtifactStagingDirectory)/output'
          Createprocess: false
          folderName: 'Shared'
