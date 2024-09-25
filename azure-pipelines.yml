@@ -19,7 +19,7 @@ steps:
        tracelevel: 'verbose'
 
 - task: UiPathDeploy@4
- |inputs:
+  inputs:
          orchestratorConnection: 'ConnectionToorch'
          PackagesPath: '$(Build.ArtifactStagingDirectory)/output'
          Createprocess: false
